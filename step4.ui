@@ -383,7 +383,7 @@ border-color: rgb(0, 0, 0);</string>
     <property name="text">
      <string>현재 장치의 IP주소
 
-192.168.0.10</string>
+193.168.0.10</string>
     </property>
    </widget>
    <zorder>label_6</zorder>
