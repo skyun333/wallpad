@@ -369,16 +369,16 @@ border-color: rgb(0, 0, 0);</string>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>190</y>
-      <width>351</width>
-      <height>411</height>
+      <x>220</x>
+      <y>540</y>
+      <width>331</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>AppleSDGothicNeoM00</family>
-      <pointsize>9</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -390,11 +390,10 @@ border-color: rgb(0, 0, 0);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">border: 2px solid rgb(108,147,246);
-border-image:url(infra.png)</string>
+     <string notr="true"/>
     </property>
     <property name="text">
-     <string/>
+     <string>인프라 보안 점검 &gt;</string>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
@@ -409,16 +408,16 @@ border-image:url(infra.png)</string>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>190</y>
-      <width>351</width>
-      <height>411</height>
+      <x>580</x>
+      <y>540</y>
+      <width>331</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>AppleSDGothicNeoM00</family>
-      <pointsize>9</pointsize>
+      <pointsize>12</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -430,10 +429,10 @@ border-image:url(infra.png)</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">border: 2px solid rgb(108,147,246)</string>
+     <string notr="true"/>
     </property>
     <property name="text">
-     <string/>
+     <string>기기 보안 점검 &gt;</string>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
@@ -445,7 +444,26 @@ border-image:url(infra.png)</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>190</y>
+      <width>351</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(108,147,246);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>device.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -454,16 +472,20 @@ border-image:url(infra.png)</string>
       <height>411</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(108,147,246);</string>
+    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>infra.png</pixmap>
+     <pixmap>inf.png</pixmap>
     </property>
    </widget>
    <zorder>label_6</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_12</zorder>
    <zorder>pushButton_4</zorder>
-   <zorder>label_11</zorder>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
