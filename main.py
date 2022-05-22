@@ -10,6 +10,7 @@ from PyQt5.QtCore import Qt, QSize, QEventLoop
 from PyQt5.QtGui import QMovie
 from PyQt5.QtCore import QTimer
 import socket
+from PyQt5.QtGui import QIcon
 
 
 class Step1Window(QMainWindow):
@@ -18,6 +19,8 @@ class Step1Window(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('step1.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
         # 사용자가 버튼 누르면 선택됐다고 시각적으로 보여지는 부분
@@ -83,6 +86,8 @@ class Step2Window(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('step2.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
         self.pushButton.clicked.connect(self.button)
@@ -97,6 +102,8 @@ class Step3Window(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('step3.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
         self.pushButton.clicked.connect(self.button)
@@ -111,6 +118,8 @@ class Step4Window(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('step4.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
         ip = socket.gethostbyname(socket.gethostname())
@@ -129,6 +138,8 @@ class ItemsWindow(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('items.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
         self.pushButton.clicked.connect(self.button)
@@ -143,8 +154,9 @@ class ProgressWindow(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('progress.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
-        
 
         count = 0
 
@@ -178,6 +190,8 @@ class ResultWindow(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('result.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
 
@@ -186,6 +200,8 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.ui = uic.loadUi('main.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
         self.pushButton_3.clicked.connect(self.button3)
 
