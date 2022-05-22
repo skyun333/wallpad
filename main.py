@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, uic, QtTest
 from sqlalchemy import false, func, true
 from sympy import N
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp, QAbstractButton
 from PyQt5.QtCore import QCoreApplication
 import time
 from PyQt5.QtCore import Qt, QSize, QEventLoop
@@ -143,13 +143,14 @@ class ProgressWindow(QMainWindow):
             self.progressBar.setValue(count)
 
         if count==100:
-            self.label_3.setGeometry(QtCore.QRect(510,260,120,90))
+            self.label_3.setGeometry(QtCore.QRect(506,265,120,90))
             self.movie = QMovie("done.gif")
             self.movie.setScaledSize(QSize(120,90))
             self.label_3.setMovie(self.movie)
             self.movie.start()
             self.label_10.setText("점검이 완료되었습니다\n결과를 확인하세요")
-            
+            self.pushButton.setText("결과 확인")
+           
 
         
 
