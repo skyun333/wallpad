@@ -360,7 +360,8 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">min-height: 12px;
 max-height: 12px;
 border-radius: 6px;
-background-color: rgb(211,211,211);</string>
+background-color: rgb(211,211,211);
+</string>
     </property>
     <property name="value">
      <number>20</number>
