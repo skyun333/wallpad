@@ -139,7 +139,7 @@ class ProgressWindow(QMainWindow):
 
         while count < 100:
             count += 1
-            QtTest.QTest.qWait(35)
+            QtTest.QTest.qWait(25)
             self.progressBar.setValue(count)
 
         if count==100:
