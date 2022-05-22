@@ -117,28 +117,6 @@ border-color: rgb(0, 0, 0);</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <family>AppleSDGothicNeoM00</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(255,255,255)</string>
-       </property>
-       <property name="text">
-        <string>점검 구분 선택</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QLabel" name="label">
        <property name="font">
         <font>
@@ -155,7 +133,7 @@ border-color: rgb(0, 0, 0);</string>
         <string notr="true">color:rgb(108, 147, 246)</string>
        </property>
        <property name="text">
-        <string>점검 항목 선택 &gt;</string>
+        <string>점검 범위 선택 &gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -306,7 +284,7 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(108,147,246)</string>
     </property>
     <property name="text">
-     <string>점검 항목 선택하기</string>
+     <string>점검 범위 선택하기</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -334,7 +312,7 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(40,40,40)</string>
     </property>
     <property name="text">
-     <string>점검을 실시할 항목을 선택해 주세요</string>
+     <string>점검을 실시할 범위를 선택해 주세요</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -366,7 +344,7 @@ border-color: rgb(0, 0, 0);</string>
      <string>&lt; 뒤로(B)</string>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
+   <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -375,35 +353,104 @@ border-color: rgb(0, 0, 0);</string>
       <height>411</height>
      </rect>
     </property>
-    <property name="widgetResizable">
-     <bool>true</bool>
+    <property name="text">
+     <string/>
     </property>
-    <widget class="QWidget" name="scrollAreaWidgetContents">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>709</width>
-       <height>409</height>
-      </rect>
-     </property>
-     <widget class="QScrollBar" name="verticalScrollBar">
-      <property name="geometry">
-       <rect>
-        <x>680</x>
-        <y>10</y>
-        <width>16</width>
-        <height>381</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-    </widget>
+    <property name="pixmap">
+     <pixmap>select.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>370</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AppleSDGothicNeoM00</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>월패드</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>430</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AppleSDGothicNeoM00</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>점검 장치</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>490</y>
+      <width>51</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AppleSDGothicNeoM00</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>App</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>560</y>
+      <width>51</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AppleSDGothicNeoM00</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>서버</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_5">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>280</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AppleSDGothicNeoM00</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>인터넷</string>
+    </property>
    </widget>
    <zorder>label_6</zorder>
-   <zorder>scrollArea</zorder>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
@@ -413,6 +460,12 @@ border-color: rgb(0, 0, 0);</string>
    <zorder>label_10</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
+   <zorder>label_11</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>checkBox_2</zorder>
+   <zorder>checkBox_3</zorder>
+   <zorder>checkBox_4</zorder>
+   <zorder>checkBox_5</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

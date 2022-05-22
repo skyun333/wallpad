@@ -101,7 +101,7 @@ class Step4Window(QMainWindow):
         ip=socket.gethostbyname(socket.gethostname())
 
         self.label_11.setText("현재 장치의 ip주소\n\n" + ip)
-        
+
         self.pushButton.clicked.connect(self.button)
     
 
@@ -129,15 +129,6 @@ class MainWindow(QMainWindow):
     def button3(self):
         self.close()
         Step1Window()
-    
-   
-
-    
-    
-
-    
-
-
        
 
 if __name__ == "__main__":
