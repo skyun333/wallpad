@@ -73,7 +73,7 @@ border-color: rgb(0, 0, 0);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(40, 40, 40);
 border-color: rgb(0, 0, 0);
-border-round : 5px;</string>
+    </string>
     </property>
     <property name="text">
      <string/>

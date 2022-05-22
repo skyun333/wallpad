@@ -30,6 +30,11 @@ class Step1Window(QMainWindow):
         self.pushButton_11.clicked.connect(self.button11)
 
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button8(self):
 
@@ -91,6 +96,16 @@ class Step2Window(QMainWindow):
         self.show()
 
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_2.clicked.connect(self.button2)
+    
+    def button2(self):
+        self.close()
+        Step1Window()
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button(self):
         self.close()
@@ -107,6 +122,16 @@ class Step3Window(QMainWindow):
         self.show()
 
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_2.clicked.connect(self.button2)
+    
+    def button2(self):
+        self.close()
+        Step2Window()
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button(self):
         self.close()
@@ -127,6 +152,16 @@ class Step4Window(QMainWindow):
         self.label_11.setText("현재 장치의 ip주소\n\n" + ip)
 
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_2.clicked.connect(self.button2)
+    
+    def button2(self):
+        self.close()
+        Step3Window()
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button(self):
         self.close()
@@ -143,6 +178,16 @@ class ItemsWindow(QMainWindow):
         self.show()
 
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_2.clicked.connect(self.button2)
+    
+    def button2(self):
+        self.close()
+        Step4Window()
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button(self):
         self.close()
@@ -176,7 +221,7 @@ class ProgressWindow(QMainWindow):
                 QtTest.QTest.qWait(200)
 
             self.progressBar.setValue(count)
-
+    
         if count == 100:
             self.label_3.setGeometry(QtCore.QRect(506, 265, 120, 90))
             self.movie = QMovie("done.gif")
@@ -186,6 +231,11 @@ class ProgressWindow(QMainWindow):
             self.label_10.setText("점검이 완료되었습니다\n결과를 확인하세요")
             self.pushButton.setText("결과 확인")
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button(self):
         self.close()
@@ -230,30 +280,119 @@ class ProresultWindow(QMainWindow):
         self.movie.start()
 
         self.pushButton.clicked.connect(self.button)
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_4.clicked.connect(self.button4)
+        self.pushButton_5.clicked.connect(self.button5)
+    
+    def home(self):
+        self.close()
+        MainWindow()
 
     def button(self):
         self.close()
-        ResultWindow()
-
-
-
-
-class ResultWindow(QMainWindow):
+        ResultWindow_wallpad()
     
+    def button2(self):
+        self.close()
+        ResultWindow_app()
+
+    def button4(self):
+        self.close()
+        ResultWindow_server()
+
+    def button5(self):
+        self.close()
+        ResultWindow_internet()
+
+
+
+
+class ResultWindow_wallpad(QMainWindow):
     
     def __init__(self):
         super().__init__()
         
-        self.ui = uic.loadUi('result.ui', self)
+        self.ui = uic.loadUi('result_wallpad.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
     
     def button2(self):
         self.close()
         ProresultWindow()
+
+class ResultWindow_app(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_app.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        ProresultWindow()
+
+class ResultWindow_server(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_server.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        ProresultWindow()
+
+class ResultWindow_internet(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_internet.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        ProresultWindow()
+
+    
 
 
         
