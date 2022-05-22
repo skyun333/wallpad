@@ -1,11 +1,13 @@
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
+from PyQt5 import QtCore, QtGui, QtWidgets, uic, QtTest
 from sqlalchemy import false, func, true
 from sympy import N
+from PyQt5.QtWebEngineWidgets import QWebEngineView
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp
 from PyQt5.QtCore import QCoreApplication
 import time
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QSize, QEventLoop
+from PyQt5.QtGui import QMovie 
 from PyQt5.QtCore import QTimer
 import socket
 
@@ -104,20 +106,57 @@ class Step4Window(QMainWindow):
 
         self.pushButton.clicked.connect(self.button)
     
-
     def button(self):
         self.close()
-        ListingWindow()
+        ItemsWindow()
 
-class ListingWindow(QMainWindow):
+class ItemsWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.ui = uic.loadUi('listing.ui',self)
+        self.ui = uic.loadUi('items.ui',self)
         self.show()
-    
-       
 
+        self.pushButton.clicked.connect(self.button)
+
+    def button(self):
+        self.close()
+        ProgressWindow()
+
+class ProgressWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.ui = uic.loadUi('progress.ui',self)
+        self.show()
+
+        count = 0
+
+        self.movie = QMovie("spinner.gif")
+        self.movie.setScaledSize(QSize(61,61))
+        self.label_3.setMovie(self.movie)
+        self.movie.start()
+
+        while count < 100:
+            count += 1
+            QtTest.QTest.qWait(35)
+            self.progressBar.setValue(count)
+
+        if count==100:
+            self.label_3.setGeometry(QtCore.QRect(510,260,120,90))
+            self.movie = QMovie("done.gif")
+            self.movie.setScaledSize(QSize(120,90))
+            self.label_3.setMovie(self.movie)
+            self.movie.start()
+            self.label_10.setText("점검이 완료되었습니다\n결과를 확인하세요")
+            
+
+        
+
+    
+            
+
+        
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
