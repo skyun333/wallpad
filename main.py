@@ -165,9 +165,16 @@ class ProgressWindow(QMainWindow):
         self.label_3.setMovie(self.movie)
         self.movie.start()
 
-        while count < 100:
+        while count < 100:   
             count += 1
             QtTest.QTest.qWait(25)
+            if count==17:
+                QtTest.QTest.qWait(400)
+            if count==55:
+                QtTest.QTest.qWait(600)
+            if count==88:
+                QtTest.QTest.qWait(200)
+
             self.progressBar.setValue(count)
 
         if count == 100:
@@ -182,18 +189,74 @@ class ProgressWindow(QMainWindow):
 
     def button(self):
         self.close()
+        ProresultWindow()
+
+
+class ProresultWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('proresult.ui', self)
+        self.pushButton.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.pushButton_2.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.pushButton_4.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.pushButton_5.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.movie = QMovie("red.gif")
+        self.movie.setScaledSize(QSize(81, 81))
+        self.label_3.setMovie(self.movie)
+        self.label_12.setMovie(self.movie)
+        self.label_13.setMovie(self.movie)
+        self.label_14.setMovie(self.movie)
+        self.movie.start()
+
+        self.pushButton.clicked.connect(self.button)
+
+    def button(self):
+        self.close()
         ResultWindow()
 
 
+
+
 class ResultWindow(QMainWindow):
+    
+    
     def __init__(self):
         super().__init__()
-
+        
         self.ui = uic.loadUi('result.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
+        self.pushButton_2.clicked.connect(self.button2)
+    
+    def button2(self):
+        self.close()
+        ProresultWindow()
+
+
+        
 
 class MainWindow(QMainWindow):
     def __init__(self):
