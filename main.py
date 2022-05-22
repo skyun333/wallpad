@@ -135,7 +135,7 @@ class ItemsWindow(QMainWindow):
 
     def button(self):
         self.close()
-        ProgressWindow()    
+        ProgressWindow()
 
 
 class ProgressWindow(QMainWindow):
@@ -155,7 +155,6 @@ class ProgressWindow(QMainWindow):
         self.movie.setScaledSize(QSize(61, 61))
         self.label_3.setMovie(self.movie)
         self.movie.start()
-        
 
         while count < 100:
             count += 1
