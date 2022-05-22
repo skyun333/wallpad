@@ -144,6 +144,10 @@ class ProgressWindow(QMainWindow):
 
         self.ui = uic.loadUi('progress.ui', self)
         self.show()
+        self.progressBar.setStyleSheet("QProgressBar::chunk "
+                                       "{"
+                                       "background-color:  rgb(120,179,72);;"
+                                       "}")
 
         count = 0
 
