@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, uic, QtTest
 from sqlalchemy import false, func, true
 from sympy import N
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp, QAbstractButton
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp, QAbstractButton, QVBoxLayout
 from PyQt5.QtCore import QCoreApplication
 import time
 from PyQt5.QtCore import Qt, QSize, QEventLoop
@@ -11,6 +11,7 @@ from PyQt5.QtGui import QMovie
 from PyQt5.QtCore import QTimer
 import socket
 from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import QDateTime
 
 
 class Step1Window(QMainWindow):
@@ -34,7 +35,7 @@ class Step1Window(QMainWindow):
     
     def home(self):
         self.close()
-        MainWindow()
+        FirstWindow()
 
     def button8(self):
 
@@ -105,7 +106,7 @@ class Step2Window(QMainWindow):
     
     def home(self):
         self.close()
-        MainWindow()
+        FirstWindow()
 
     def button(self):
         self.close()
@@ -131,7 +132,7 @@ class Step3Window(QMainWindow):
     
     def home(self):
         self.close()
-        MainWindow()
+        FirstWindow()
 
     def button(self):
         self.close()
@@ -161,7 +162,7 @@ class Step4Window(QMainWindow):
     
     def home(self):
         self.close()
-        MainWindow()
+        FirstWindow()
 
     def button(self):
         self.close()
@@ -187,7 +188,7 @@ class ItemsWindow(QMainWindow):
     
     def home(self):
         self.close()
-        MainWindow()
+        FirstWindow()
 
     def button(self):
         self.close()
@@ -235,7 +236,7 @@ class ProgressWindow(QMainWindow):
     
     def home(self):
         self.close()
-        MainWindow()
+        FirstWindow()
 
     def button(self):
         self.close()
@@ -284,6 +285,7 @@ class ProresultWindow(QMainWindow):
         self.pushButton_3.clicked.connect(self.home)
         self.pushButton_4.clicked.connect(self.button4)
         self.pushButton_5.clicked.connect(self.button5)
+        self.pushButton_6.clicked.connect(self.button6)
     
     def home(self):
         self.close()
@@ -304,6 +306,10 @@ class ProresultWindow(QMainWindow):
     def button5(self):
         self.close()
         ResultWindow_internet()
+
+    def button6(self):
+        self.close()
+        MainWindow()
 
 
 
@@ -392,16 +398,106 @@ class ResultWindow_internet(QMainWindow):
         self.close()
         ProresultWindow()
 
-    
 
+class ResultWindow_wallpad_after(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_wallpad.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        MainWindow()
+
+class ResultWindow_app_after(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_app.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        MainWindow()
+
+class ResultWindow_server_after(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_server.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        MainWindow()
+
+class ResultWindow_internet_after(QMainWindow):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('result_internet.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_3.clicked.connect(self.home)
+    
+    def home(self):
+        self.close()
+        MainWindow()
+    
+    def button2(self):
+        self.close()
+        MainWindow()
+
+
+
+class ScrollWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.ui = uic.loadUi('scrollbar.ui', self)
+
+        self.show()
 
         
-
-class MainWindow(QMainWindow):
+class FirstWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.ui = uic.loadUi('main.ui', self)
+        self.ui = uic.loadUi('firstmain.ui',self)
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
@@ -412,10 +508,87 @@ class MainWindow(QMainWindow):
         Step1Window()
 
 
+
+
+
+    
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.ui = uic.loadUi('main.ui', self)
+        
+
+        self.pushButton.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.pushButton_2.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.pushButton_4.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.pushButton_5.setStyleSheet(
+                        "background-color: #00ff0000;"
+                        "selection-color: #00ff0000;"
+                        "selection-background-color: #00ff0000;"
+                        )
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+        datetime = QDateTime.currentDateTime()
+        self.label_6.setText(datetime.toString('yyyy.MM.dd, hh:mm'))
+        self.pushButton_3.clicked.connect(self.button3)
+
+        self.movie = QMovie("red.gif")
+        self.movie.setScaledSize(QSize(81, 81))
+        self.label_10.setMovie(self.movie)
+        self.label_11.setMovie(self.movie)
+        self.label_12.setMovie(self.movie)
+        self.label_13.setMovie(self.movie)
+        self.movie.start()
+
+        self.pushButton.clicked.connect(self.button)
+        self.pushButton_2.clicked.connect(self.button2)
+        self.pushButton_4.clicked.connect(self.button4)
+        self.pushButton_5.clicked.connect(self.button5)
+
+    def button3(self):
+        self.close()
+        Step1Window()
+
+    def button(self):
+        self.close()
+        ResultWindow_wallpad_after()
+
+    def button2(self):
+        self.close()
+        ResultWindow_app_after()
+    
+    def button4(self):
+        self.close()
+        ResultWindow_server_after()
+    
+    def button5(self):
+        self.close()
+        ResultWindow_internet_after()
+
+
+
+
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-
-    MainWindow()
+    #ScrollWindow()
+    FirstWindow()
 
     sys.exit(app.exec_())
+
+
