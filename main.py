@@ -580,14 +580,43 @@ class MainWindow(QMainWindow):
         ResultWindow_internet_after()
 
 
+class Result_exampleWindow(QMainWindow):
+    def __init__(self):
+    
+        super().__init__()
 
-
+        self.ui = uic.loadUi('result_example(scroll).ui', self)
+        
+        self.show()
+        self.pushButton_6.setStyleSheet("""
+        QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+    """)
+        
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    #ScrollWindow()
-    FirstWindow()
+    Result_exampleWindow()
+    #FirstWindow()
 
     sys.exit(app.exec_())
 

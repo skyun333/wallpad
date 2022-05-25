@@ -284,7 +284,7 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(108,147,246)</string>
     </property>
     <property name="text">
-     <string>점검 결과 - 연동 App</string>
+     <string>점검 결과 - 월패드</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -495,7 +495,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>0</y>
+       <y>-339</y>
        <width>829</width>
        <height>680</height>
       </rect>
@@ -522,11 +522,11 @@ border: solid 0px;</string>
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>721</width>
+        <width>725</width>
         <height>671</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout" columnstretch="7,2,2,2" rowminimumheight="0,0,0,0,0,0,0,0,0">
+      <layout class="QGridLayout" name="gridLayout" columnstretch="7,2,2,2">
        <property name="sizeConstraint">
         <enum>QLayout::SetDefaultConstraint</enum>
        </property>
@@ -558,109 +558,6 @@ border-radius: 6px</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <property name="spacing">
-          <number>7</number>
-         </property>
-         <item>
-          <widget class="QPushButton" name="pushButton_6">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="sizeIncrement">
-            <size>
-             <width>0</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>AppleSDGothicNeoM00</family>
-             <pointsize>9</pointsize>
-            </font>
-           </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color : rgb(255, 255, 255);
-color : rgb(108, 147, 246);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
-           </property>
-           <property name="text">
-            <string>확인 &gt;</string>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>9</width>
-             <height>20</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="2" column="3">
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="sizeIncrement">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
-         </property>
-         <property name="text">
-          <string>확인 &gt;</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>9</width>
-           <height>20</height>
-          </size>
          </property>
         </widget>
        </item>
@@ -779,8 +676,63 @@ border-radius:14px
          </property>
         </widget>
        </item>
-       <item row="5" column="3">
-        <widget class="QPushButton" name="pushButton_17">
+       <item row="0" column="3">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>7</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>AppleSDGothicNeoM00</family>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color : rgb(255, 255, 255);
+color : rgb(108, 147, 246);
+border: 2px solid rgb(108, 147, 246);
+margin-left:10px;
+margin-right:10px;
+margin-top:25px;
+margin-bottom:25px;
+border-radius:14px
+</string>
+           </property>
+           <property name="text">
+            <string>확인 &gt;</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="pushButton_7">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
            <horstretch>0</horstretch>
@@ -824,6 +776,25 @@ border-radius:14px
            <width>9</width>
            <height>20</height>
           </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_15">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>미흡</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -875,158 +846,6 @@ border-radius:14px
          </property>
         </widget>
        </item>
-       <item row="7" column="2">
-        <widget class="QLabel" name="label_48">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>중</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="QLabel" name="label_47">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="label_46">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>점검항목 7</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="2">
-        <widget class="QLabel" name="label_45">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>중</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="label_20">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>상</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_23">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>상</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QLabel" name="label_32">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>중</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="label_15">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>미흡</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
        <item row="3" column="1">
         <widget class="QLabel" name="label_12">
          <property name="font">
@@ -1058,15 +877,342 @@ border-radius: 6px</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>점검항목 1</string>
+          <string>처음 제품을 사용할 때 인증정보를 설정하도록
+요구하거나, 초기 인증정보를 변경하도록 요구해야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_43">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>제품에 사용되는 사용자 계정 및 권한에 대한
+관리 기능을 제공해야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="label_50">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>양호</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
+       <item row="8" column="2">
+        <widget class="QLabel" name="label_51">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>중</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>관리서비스 및 중요정보 접근 시 사용자 신원을 검증하기
+위해 식별 및 인증이 선행되어야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_42">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>중</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>잘못된 인증정보를 통한 반복된 인증 시도를 제한해야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_45">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>중</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_46">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>모든 사용자 계정에 대해 최소 권한의 원칙을 적용해야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
        <item row="3" column="2">
         <widget class="QLabel" name="label_25">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>중</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_32">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>중</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_23">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>상</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QPushButton" name="pushButton_20">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255, 255, 255);
+border: 2px solid rgb(108, 147, 246);
+margin-left:10px;
+margin-right:10px;
+margin-top:25px;
+margin-bottom:25px;
+border-radius:14px
+</string>
+         </property>
+         <property name="text">
+          <string>확인 &gt;</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>9</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QPushButton" name="pushButton_17">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="sizeIncrement">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255, 255, 255);
+border: 2px solid rgb(108, 147, 246);
+margin-left:10px;
+margin-right:10px;
+margin-top:25px;
+margin-bottom:25px;
+border-radius:14px
+</string>
+         </property>
+         <property name="text">
+          <string>확인 &gt;</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>9</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_19">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>제품의 초기 인증정보는 유일한 값으로 설정되어야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="label_48">
          <property name="font">
           <font>
            <family>AppleSDGothicNeoM00</family>
@@ -1103,82 +1249,6 @@ border-radius: 6px</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_11">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>점검항목 3</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_19">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>점검항목 4</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_16">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>점검항목 2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="QLabel" name="label_42">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>중</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="0">
         <widget class="QLabel" name="label_35">
          <property name="font">
@@ -1191,7 +1261,26 @@ border-radius: 6px</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>점검항목 5</string>
+          <string>관리자 계정에 대해서는 동시 접속을 제한해야 한다.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_20">
+         <property name="font">
+          <font>
+           <family>AppleSDGothicNeoM00</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px</string>
+         </property>
+         <property name="text">
+          <string>상</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -1265,8 +1354,8 @@ border-radius:14px
          </property>
         </widget>
        </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="label_43">
+       <item row="7" column="1">
+        <widget class="QLabel" name="label_47">
          <property name="font">
           <font>
            <family>AppleSDGothicNeoM00</family>
@@ -1277,7 +1366,7 @@ border-radius:14px
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>점검항목 6</string>
+          <string>양호</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -1296,96 +1385,11 @@ border-radius: 6px</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>점검항목 8</string>
+          <string>길이, 주기, 복잡성을 고려하여 안전한 비밀번호로
+설정되도록 해야 한다.</string>
          </property>
          <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="1">
-        <widget class="QLabel" name="label_50">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="2">
-        <widget class="QLabel" name="label_51">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>중</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="3">
-        <widget class="QPushButton" name="pushButton_20">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="sizeIncrement">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-           <pointsize>9</pointsize>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
-         </property>
-         <property name="text">
-          <string>확인 &gt;</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>9</width>
-           <height>20</height>
-          </size>
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>
