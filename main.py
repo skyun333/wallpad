@@ -326,6 +326,10 @@ class ResultWindow_wallpad(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_56.clicked.connect(self.button56)
+
+    def button56(self):
+        feedback_wallpad_1()   
     
     def home(self):
         self.close()
@@ -411,6 +415,7 @@ class ResultWindow_wallpad_after(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
+        
     
     def home(self):
         self.close()
@@ -419,6 +424,23 @@ class ResultWindow_wallpad_after(QMainWindow):
     def button2(self):
         self.close()
         MainWindow()
+
+    
+
+class feedback_wallpad_1(QDialog):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('feedback/feedback1.ui', self)
+        
+        self.show()
+
+        self.pushButton_4.clicked.connect(self.button4)
+       
+    def button4(self):
+        self.close()
+        
 
 class ResultWindow_app_after(QMainWindow):
     
@@ -580,36 +602,7 @@ class MainWindow(QMainWindow):
         ResultWindow_internet_after()
 
 
-class Result_exampleWindow(QMainWindow):
-    def __init__(self):
-    
-        super().__init__()
 
-        self.ui = uic.loadUi('result_example(scroll)2.ui', self)
-        
-        self.show()
-        self.pushButton_6.setStyleSheet("""
-        QPushButton {
-            background-color : rgb(255, 255, 255);
-            color : rgb(108, 147, 246);
-            border: 2px solid rgb(108, 147, 246);
-            margin-left:10px;
-            margin-right:10px;
-            margin-top:25px;
-            margin-bottom:25px;
-            border-radius:14px
-        }
-        QPushButton:hover {
-            background-color : rgb(108, 147, 246);
-            color : rgb(255, 255, 255);
-            border: 2px solid rgb(108, 147, 246);
-            margin-left:10px;
-            margin-right:10px;
-            margin-top:25px;
-            margin-bottom:25px;
-            border-radius:14px
-        }
-    """)
         
 
 class first(QDialog):
@@ -624,9 +617,9 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     #Result_exampleWindow()
-    #FirstWindow()
-    window =first()
-    window.show()
+    FirstWindow()
+    #window =first()
+    #window.show()
 
     sys.exit(app.exec_())
 

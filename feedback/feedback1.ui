@@ -178,7 +178,7 @@ border-radius:15px</string>
     <enum>QTabWidget::Triangular</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <property name="elideMode">
     <enum>Qt::ElideNone</enum>
@@ -283,7 +283,8 @@ border-radius:14px
       <string notr="true">
 
 border: 2px solid rgb(108, 147, 246);
-border-radius:15px</string>
+border-radius:15px;
+padding-left:10px</string>
      </property>
      <property name="text">
       <string>- 새로운 IoT 제품을 시동하여 사용자 인증이 필요한 기능에 접근을 시도한 후, 인증정보를
