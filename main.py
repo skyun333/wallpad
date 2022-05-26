@@ -3,7 +3,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets, uic, QtTest
 from sqlalchemy import false, func, true
 from sympy import N
 from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp, QAbstractButton, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip, QMainWindow, qApp, QAbstractButton, QVBoxLayout, QDialog
 from PyQt5.QtCore import QCoreApplication
 import time
 from PyQt5.QtCore import Qt, QSize, QEventLoop
@@ -585,7 +585,7 @@ class Result_exampleWindow(QMainWindow):
     
         super().__init__()
 
-        self.ui = uic.loadUi('result_example(scroll).ui', self)
+        self.ui = uic.loadUi('result_example(scroll)2.ui', self)
         
         self.show()
         self.pushButton_6.setStyleSheet("""
@@ -612,11 +612,21 @@ class Result_exampleWindow(QMainWindow):
     """)
         
 
+class first(QDialog):
+    def __init__(self):
+            super().__init__()
+            self.ui = uic.loadUi('feedback/feedback1.ui', self)
+            self.show()
+
+
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    Result_exampleWindow()
+    #Result_exampleWindow()
     #FirstWindow()
+    window =first()
+    window.show()
 
     sys.exit(app.exec_())
 
