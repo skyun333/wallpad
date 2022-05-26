@@ -177,7 +177,7 @@ border-radius:15px</string>
     <enum>QTabWidget::Triangular</enum>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="elideMode">
     <enum>Qt::ElideNone</enum>
@@ -208,7 +208,8 @@ border-radius:15px</string>
       <string notr="true">
 
 border: 2px solid rgb(108, 147, 246);
-border-radius:15px</string>
+border-radius:15px;
+padding-left:10px</string>
      </property>
      <property name="text">
       <string>- IoT 제품의 설정, 사용자 계정 및 권한 관리 등의 관리서비스 접근 시 사용자에 대한 식별 및

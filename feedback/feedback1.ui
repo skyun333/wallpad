@@ -209,7 +209,8 @@ border-radius:15px</string>
       <string notr="true">
 
 border: 2px solid rgb(108, 147, 246);
-border-radius:15px</string>
+border-radius:15px;
+padding-left:10px;</string>
      </property>
      <property name="text">
       <string>- 초기 인증정보를 사용하지 않는 경우 인증정보를 새롭게 설정하도록 해야 하며, 초기
