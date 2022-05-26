@@ -518,7 +518,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>0</y>
+       <y>-47</y>
        <width>829</width>
        <height>519</height>
       </rect>
@@ -598,7 +598,7 @@ padding-left: 3px;</string>
          </property>
          <property name="text">
           <string>인증을 위한 비밀번호 입력 시
-화면에 노출되지 않도록 마스킹 처리해야 한다</string>
+화면에 노출되지 않도록 마스킹 처리해야 한다.</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -727,15 +727,26 @@ border-radius: 6px</string>
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
+          <string notr="true">QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }</string>
          </property>
          <property name="text">
           <string>확인 &gt;</string>
@@ -834,15 +845,26 @@ border-radius: 6px</string>
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
+          <string notr="true">QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }</string>
          </property>
          <property name="text">
           <string>확인 &gt;</string>
@@ -946,15 +968,26 @@ border-radius: 6px</string>
             <enum>Qt::LeftToRight</enum>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color : rgb(255, 255, 255);
-color : rgb(108, 147, 246);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
+            <string notr="true">QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }</string>
            </property>
            <property name="text">
             <string>확인 &gt;</string>
@@ -1131,15 +1164,26 @@ border-radius: 6px</string>
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
+          <string notr="true">QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }</string>
          </property>
          <property name="text">
           <string>확인 &gt;</string>
@@ -1198,15 +1242,26 @@ border-radius: 6px</string>
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
+          <string notr="true">QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }</string>
          </property>
          <property name="text">
           <string>확인 &gt;</string>
@@ -1246,15 +1301,26 @@ border-radius:14px
           <enum>Qt::LeftToRight</enum>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255, 255, 255);
-border: 2px solid rgb(108, 147, 246);
-margin-left:10px;
-margin-right:10px;
-margin-top:25px;
-margin-bottom:25px;
-border-radius:14px
-</string>
+          <string notr="true">QPushButton {
+            background-color : rgb(255, 255, 255);
+            color : rgb(108, 147, 246);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }
+        QPushButton:hover {
+            background-color : rgb(108, 147, 246);
+            color : rgb(255, 255, 255);
+            border: 2px solid rgb(108, 147, 246);
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:25px;
+            margin-bottom:25px;
+            border-radius:14px
+        }</string>
          </property>
          <property name="text">
           <string>확인 &gt;</string>
