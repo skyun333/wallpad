@@ -326,10 +326,10 @@ class ResultWindow_wallpad(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
-        self.pushButton_56.clicked.connect(self.button56)#3
-        self.pushButton_57.clicked.connect(self.button57)#4
-        self.pushButton_54.clicked.connect(self.button54)#1
-        self.pushButton_53.clicked.connect(self.button53)#2
+        self.pushButton_56.clicked.connect(self.button56)#1
+        self.pushButton_57.clicked.connect(self.button57)#2
+        self.pushButton_54.clicked.connect(self.button54)#3
+        self.pushButton_53.clicked.connect(self.button53)#4
         self.pushButton_55.clicked.connect(self.button55)#5
         self.pushButton_58.clicked.connect(self.button58)#6
         self.pushButton_52.clicked.connect(self.button52)#7
@@ -827,6 +827,95 @@ class ResultWindow_wallpad_after(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_56.clicked.connect(self.button56)#1
+        self.pushButton_57.clicked.connect(self.button57)#2
+        self.pushButton_54.clicked.connect(self.button54)#3
+        self.pushButton_53.clicked.connect(self.button53)#4
+        self.pushButton_55.clicked.connect(self.button55)#5
+        self.pushButton_58.clicked.connect(self.button58)#6
+        self.pushButton_52.clicked.connect(self.button52)#7
+        self.pushButton_59.clicked.connect(self.button59)#8
+        self.pushButton_67.clicked.connect(self.button67)#9
+        self.pushButton_66.clicked.connect(self.button66)#10
+        self.pushButton_65.clicked.connect(self.button65)#11
+        self.pushButton_70.clicked.connect(self.button70)#12
+        self.pushButton_68.clicked.connect(self.button68)#13
+        self.pushButton_69.clicked.connect(self.button69)#14
+        self.pushButton_72.clicked.connect(self.button72)#15
+        self.pushButton_71.clicked.connect(self.button71)#16
+        self.pushButton_60.clicked.connect(self.button60)#17
+        self.pushButton_61.clicked.connect(self.button61)#18
+        self.pushButton_62.clicked.connect(self.button62)#19
+        self.pushButton_63.clicked.connect(self.button63)#20
+        self.pushButton_64.clicked.connect(self.button64)#21
+        self.pushButton_73.clicked.connect(self.button73)#22
+
+
+    def button55(self):
+        feedback_wallpad_5()
+    
+    def button58(self):
+        feedback_wallpad_6()
+    
+    def button52(self):
+        feedback_wallpad_7()
+    
+    def button59(self):
+        feedback_wallpad_8()
+    
+    def button67(self):
+        feedback_wallpad_9()
+    
+    def button66(self):
+        feedback_wallpad_10()
+    
+    def button65(self):
+        feedback_wallpad_11()
+    
+    def button70(self):
+        feedback_wallpad_12()
+    
+    def button68(self):
+        feedback_wallpad_13()
+    
+    def button69(self):
+        feedback_wallpad_14()
+    
+    def button72(self):
+        feedback_wallpad_15()
+    
+    def button71(self):
+        feedback_wallpad_16()
+    
+    def button60(self):
+        feedback_wallpad_17()
+    
+    def button61(self):
+        feedback_wallpad_18()
+    
+    def button62(self):
+        feedback_wallpad_19()
+    
+    def button63(self):
+        feedback_wallpad_20()
+    
+    def button64(self):
+        feedback_wallpad_21()
+    
+    def button73(self):
+        feedback_wallpad_22()
+
+    def button54(self):
+        feedback_wallpad_3()
+    
+    def button53(self):
+        feedback_wallpad_4()  
+    
+    def button56(self):
+        feedback_wallpad_1()
+    
+    def button57(self):
+        feedback_wallpad_2() 
         
     
     def home(self):
@@ -1161,6 +1250,30 @@ class ResultWindow_app_after(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_85.clicked.connect(self.button85)#1
+        self.pushButton_86.clicked.connect(self.button86)#2
+        self.pushButton_87.clicked.connect(self.button87)#3
+        self.pushButton_83.clicked.connect(self.button83)#4
+        self.pushButton_88.clicked.connect(self.button88)#5
+        self.pushButton_84.clicked.connect(self.button84)#6
+
+    def button85(self):
+        feedback_app_1()
+    
+    def button86(self):
+        feedback_app_2()
+
+    def button87(self):
+        feedback_app_3()
+
+    def button83(self):
+        feedback_app_4()
+
+    def button88(self):
+        feedback_app_5()
+
+    def button84(self):
+        feedback_app_6()
     
     def home(self):
         self.close()
@@ -1182,6 +1295,34 @@ class ResultWindow_server_after(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_56.clicked.connect(self.button56)#1
+        self.pushButton_57.clicked.connect(self.button57)#2
+        self.pushButton_54.clicked.connect(self.button54)#3
+        self.pushButton_53.clicked.connect(self.button53)#4
+        self.pushButton_55.clicked.connect(self.button55)#5
+        self.pushButton_58.clicked.connect(self.button58)#6
+        self.pushButton_59.clicked.connect(self.button59)#7
+
+    def button56(self):
+        feedback_server_1()
+    
+    def button57(self):
+        feedback_server_2()
+        
+    def button54(self):
+        feedback_server_3()
+
+    def button53(self):
+        feedback_server_4()
+
+    def button55(self):
+        feedback_server_5()
+
+    def button58(self):
+        feedback_server_6()
+
+    def button59(self):
+        feedback_server_7()
     
     def home(self):
         self.close()
@@ -1203,6 +1344,26 @@ class ResultWindow_internet_after(QMainWindow):
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_56.clicked.connect(self.button56)#1
+        self.pushButton_57.clicked.connect(self.button57)#2
+        self.pushButton_54.clicked.connect(self.button54)#3
+        self.pushButton_53.clicked.connect(self.button53)#4
+        self.pushButton_55.clicked.connect(self.button55)#5
+
+    def button56(self):
+        feedback_internet_1()
+
+    def button57(self):
+        feedback_internet_2()
+
+    def button54(self):
+        feedback_internet_3()
+
+    def button53(self):
+        feedback_internet_4()
+
+    def button55(self):
+        feedback_internet_5()
     
     def home(self):
         self.close()
