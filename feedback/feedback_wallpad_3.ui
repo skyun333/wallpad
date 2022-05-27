@@ -133,7 +133,7 @@ border: 2px solid rgb(108, 147, 246);
 border-radius:15px</string>
    </property>
    <property name="text">
-    <string>  관리서비스 및 중요정보 접근 시 사용자 신원을 검증하기 위해 식별 및 인증이 선행되어야 한다.</string>
+    <string>  잘못된 인증정보를 통한 반복된 인증시도를 제한해야 한다.</string>
    </property>
    <property name="scaledContents">
     <bool>false</bool>
@@ -177,7 +177,7 @@ border-radius:15px</string>
     <enum>QTabWidget::Triangular</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <property name="elideMode">
     <enum>Qt::ElideNone</enum>
@@ -212,16 +212,18 @@ border-radius:15px;
 padding-left:10px</string>
      </property>
      <property name="text">
-      <string>- IoT 제품의 설정, 사용자 계정 및 권한 관리 등의 관리서비스 접근 시 사용자에 대한 식별 및
-   인증을 수행해야 함
+      <string>- ‌ 잘못된 인증정보를 통한 반복된 인증 시도를 허용할 경우 무차별 대입 공격(Brute Force
+    Attack)에 취약할 수 있으므로, IoT 제품은 잘못된 인증정보를 통한 지속적인 인증 시도에 대해
+    이를 적절하게 대응하는 기능을 제공해야 함
 
-- 개인을 식별할 수 있는 영상정보와 같은 중요정보 접근 시 사용자에 대한 식별 및 인증을
-   수행해야 함
+- ‌ 다음과 같은 방법으로 해당 기능을 제공할 수 있음
 
-- 식별 및 인증은 아이디 및 비밀번호 메커니즘이 일반적임
-
-- 계정에 부여된 권한에 따라 관리서비스 및 중요 정보에 대한 접근을 허용하는 경우, 일반 사용자
-   등 다른 권한들과 분리하여 해당 권한을 관리해야 함</string>
+      a. ‌ 인증 시도 횟수를 제한하여 정해진 인증 시도 횟수 초과 시 계정 잠금 혹은 일정 시간 인증
+      기능을 비활성화 (인증 시도 횟수는 5회 이하, 인증 기능 비활성화 시간은 5분 이상으로
+      구현하도록 권고)
+      b. ‌ 정해진 인증 시도 횟수 초과 시 허가되지 않은 네트워크 트래픽으로 판단하여 자동 차단
+      목록에 추가 (인증 시도 횟수는 5회 이하로 구현하도록 권고)
+      c. 캡챠(CAPTCHA) 방식을 활용</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -285,18 +287,10 @@ border-radius:15px;
 padding-left:10px</string>
      </property>
      <property name="text">
-      <string>- IoT 제품의 관리서비스에 접근을 시도하여 인증을 요구하는지 확인함
+      <string>- ‌ 제출문서를 통해 잘못된 인증정보를 통한 반복된 인증 시도 시 이를 제한하는 방법을 확인하고,
+    제출문서에 기재된 방법이 요구사항을 대응하기에 적절한지 확인함
 
-- 계정에 부여된 권한을 통해 관리자와 일반 사용자를 구분하는 경우, 관리자 계정으로
-   로그인하여 관리서비스에 접근이 가능한지 확인하고 관리자 계정 로그아웃 후 일반 사용자
-   계정으로 로그인하여 관리서비스 접근이 거부되는지 확인함
-
-- IoT 제품의 중요정보에 접근을 시도하고 인증을 요구하는지 확인함
-
-- 계정에 부여된 권한을 통해 관리자와 일반 사용자를 구분하는 경우, 중요 정보에 접근 권한이
-   있는계정으로 로그인하여 중요 정보에 접근이 가능한지 확인하고, 해당 계정 로그아웃 후
-   일반 사용자 계정(중요 정보에 접근 권한이 없는 계정)으로 로그인하여 중요 정보에 접근이
-   거부되는지 확인함</string>
+- ‌ 제출문서에 기재된 대로 대응 방법이 실제 구현되어 있는지 확인함</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">
