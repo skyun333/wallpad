@@ -1484,11 +1484,8 @@ class first(QDialog):
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    #Result_exampleWindow()
+    
     FirstWindow()
-    #window =first()
-    #window.show()
+   
 
     sys.exit(app.exec_())
-
-
