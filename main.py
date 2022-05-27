@@ -328,7 +328,15 @@ class ResultWindow_wallpad(QMainWindow):
         self.pushButton_3.clicked.connect(self.home)
         self.pushButton_56.clicked.connect(self.button56)
         self.pushButton_57.clicked.connect(self.button57)
+        self.pushButton_54.clicked.connect(self.button54)
+        self.pushButton_53.clicked.connect(self.button53)
 
+    def button54(self):
+        feedback_wallpad_3()
+    
+    def button53(self):
+        feedback_wallpad_4()  
+    
     def button56(self):
         feedback_wallpad_1()
     
@@ -436,7 +444,7 @@ class feedback_wallpad_1(QDialog):
     def __init__(self):
         super().__init__()
         
-        self.ui = uic.loadUi('feedback/feedback1.ui', self)
+        self.ui = uic.loadUi('feedback/feedback_wallpad_1.ui', self)
         
         self.show()
 
@@ -450,7 +458,35 @@ class feedback_wallpad_2(QDialog):
     def __init__(self):
         super().__init__()
         
-        self.ui = uic.loadUi('feedback/feedback2.ui', self)
+        self.ui = uic.loadUi('feedback/feedback_wallpad_2.ui', self)
+        
+        self.show()
+
+        self.pushButton_4.clicked.connect(self.button4)
+       
+    def button4(self):
+        self.close()
+
+class feedback_wallpad_3(QDialog):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('feedback/feedback_wallpad_3.ui', self)
+        
+        self.show()
+
+        self.pushButton_4.clicked.connect(self.button4)
+       
+    def button4(self):
+        self.close()
+
+class feedback_wallpad_4(QDialog):
+    
+    def __init__(self):
+        super().__init__()
+        
+        self.ui = uic.loadUi('feedback/feedback_wallpad_4.ui', self)
         
         self.show()
 
