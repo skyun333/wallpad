@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>853</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>831</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gmarket Sans TTF</family>
+     <pointsize>16</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255,255,255);
+border-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>831</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Gmarket Sans TTF</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(108, 147, 246);
+border-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>411</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AppleSDGothicNeoM00</family>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color : rgb(255, 255, 255)</string>
+   </property>
+   <property name="text">
+    <string>점검 항목 개요 및 확인 사항 - 연동 App</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>811</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AppleSDGothicNeoM00</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : rgb(255, 255, 255);
+
+border: 2px solid rgb(108, 147, 246);
+border-radius:15px</string>
+   </property>
+   <property name="text">
+    <string>  잘못된 인증정보를 통한 반복된 인증 시도를 제한해야 한다.</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>650</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt; 뒤로(B)</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>801</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>AppleSDGothicNeoM00</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideNone</enum>
+   </property>
+   <property name="tabBarAutoHide">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>점검 요구사항</string>
+    </attribute>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>771</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>AppleSDGothicNeoM00</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+border: 2px solid rgb(108, 147, 246);
+border-radius:15px;
+padding-left:10px;</string>
+     </property>
+     <property name="text">
+      <string>- ‌ 잘못된 인증정보를 통한 반복된 인증 시도를 허용할 경우 무차별 대입 공격(Brute Force
+Attack)에 취약할 수 있으므로, IoT 제품은 잘못된 인증정보를 통한 지속적인 인증 시도에 대해
+이를 적절하게 대응하는 기능을 제공해야 함
+
+- ‌ 다음과 같은 방법으로 해당 기능을 제공할 수 있음
+  a. ‌ 인증 시도 횟수를 제한하여 정해진 인증 시도 횟수 초과 시 계정 잠금 혹은 일정 시간 인증
+기능을 비활성화 (인증 시도 횟수는 5회 이하, 인증 기능 비활성화 시간은 5분 이상으로
+구현하도록 권고)
+  b. ‌ 정해진 인증 시도 횟수 초과 시 허가되지 않은 네트워크 트래픽으로 판단하여 자동 차단
+목록에 추가 (인증 시도 횟수는 5회 이하로 구현하도록 권고)
+  c. 캡챠(CAPTCHA) 방식을 활용</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>461</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>AppleSDGothicNeoM00</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255, 255, 255);
+border: 2px solid rgb(108, 147, 246);
+margin-left:10px;
+margin-right:10px;
+margin-top:25px;
+margin-bottom:25px;
+border-radius:14px
+</string>
+     </property>
+     <property name="text">
+      <string>(1) 요구사항</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>점검 확인사항</string>
+    </attribute>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>771</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>AppleSDGothicNeoM00</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+
+border: 2px solid rgb(108, 147, 246);
+border-radius:15px;
+padding-left:10px</string>
+     </property>
+     <property name="text">
+      <string>- ‌ 제출문서를 통해 잘못된 인증정보를 통한 반복된 인증 시도 시 이를 제한하는 방법을 확인하고,
+제출문서에 기재된 방법이 요구사항을 대응하기에 적절한지 확인함
+
+- ‌ 제출문서에 기재된 대로 대응 방법이 실제 구현되어 있는지 확인함</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>0</y>
+       <width>461</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>AppleSDGothicNeoM00</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255, 255, 255);
+border: 2px solid rgb(108, 147, 246);
+margin-left:10px;
+margin-right:10px;
+margin-top:25px;
+margin-bottom:25px;
+border-radius:14px
+</string>
+     </property>
+     <property name="text">
+      <string>(2) 확인사항</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
