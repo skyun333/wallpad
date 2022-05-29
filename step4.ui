@@ -106,108 +106,6 @@ border-color: rgb(0, 0, 0);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>161</width>
-      <height>351</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <family>AppleSDGothicNeoM00</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(255, 255, 255)</string>
-       </property>
-       <property name="text">
-        <string>연결 단자 선택</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <family>AppleSDGothicNeoM00</family>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(255,255,255)</string>
-       </property>
-       <property name="text">
-        <string>단자 안내</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <family>AppleSDGothicNeoM00</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(255,255,255)</string>
-       </property>
-       <property name="text">
-        <string>포트 선택</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_4">
-       <property name="font">
-        <font>
-         <family>AppleSDGothicNeoM00</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="autoFillBackground">
-        <bool>false</bool>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color:rgb(108, 147, 246)</string>
-       </property>
-       <property name="text">
-        <string>네트워크 설정 &gt;</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
@@ -386,17 +284,142 @@ border-color: rgb(0, 0, 0);</string>
 193.168.0.10</string>
     </property>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>160</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>AppleSDGothicNeoM00</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255,255,255)</string>
+       </property>
+       <property name="text">
+        <string>연결 단자 선택</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>AppleSDGothicNeoM00</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>단자 안내</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>AppleSDGothicNeoM00</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>포트 선택</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>AppleSDGothicNeoM00</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(108, 147, 246)</string>
+       </property>
+       <property name="text">
+        <string>네트워크 설정 &gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_15">
+       <property name="font">
+        <font>
+         <family>AppleSDGothicNeoM00</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(255, 255, 255)</string>
+       </property>
+       <property name="text">
+        <string>기기정보 및
+패스워드 &gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
    <zorder>label_6</zorder>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
-   <zorder>verticalLayoutWidget</zorder>
    <zorder>pushButton_3</zorder>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>label_11</zorder>
+   <zorder>verticalLayoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

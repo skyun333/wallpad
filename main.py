@@ -171,10 +171,43 @@ class Step4Window(QMainWindow):
 
     def button(self):
         self.close()
+        Step5Window()
+
+
+class Step5Window(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.ui = uic.loadUi('step5.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('월패드 보안 점검 툴')
+        self.show()
+
+        self.pushButton.clicked.connect(self.button)
+        self.pushButton_3.clicked.connect(self.home)
+        self.pushButton_2.clicked.connect(self.button2)
+
+    def button2(self):
+        self.close()
+        Step4Window()
+
+    def home(self):
+        self.close()
+        FirstWindow()
+
+    def button(self):
+        global mac
+        mac = str(self.lineEdit.text())
+
+        global admin_pw
+        admin_pw = str(self.lineEdit_2.text())
+
+        self.close()
         ItemsWindow()
 
 
 class ItemsWindow(QMainWindow):
+
     def __init__(self):
         super().__init__()
 
@@ -182,7 +215,6 @@ class ItemsWindow(QMainWindow):
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
-
         self.pushButton.clicked.connect(self.button)
         self.pushButton_3.clicked.connect(self.home)
         self.pushButton_2.clicked.connect(self.button2)
