@@ -13,6 +13,7 @@ from PyQt5.QtCore import QTimer
 import socket
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDateTime
+import random
 
 myappid = 'slow_heart.png'  # arbitrary string
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
@@ -218,11 +219,11 @@ class ProgressWindow(QMainWindow):
         while count < 100:
             count += 1
             QtTest.QTest.qWait(25)
-            if count == 17:
+            if count == random.randrange(1, 20):
                 QtTest.QTest.qWait(400)
-            if count == 55:
+            if count == random.randrange(21, 60):
                 QtTest.QTest.qWait(600)
-            if count == 88:
+            if count == random.randrange(61, 99):
                 QtTest.QTest.qWait(200)
 
             self.progressBar.setValue(count)
