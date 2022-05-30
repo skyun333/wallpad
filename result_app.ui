@@ -518,7 +518,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-47</y>
+       <y>-178</y>
        <width>829</width>
        <height>519</height>
       </rect>
@@ -546,7 +546,7 @@ border: solid 0px;</string>
         <x>0</x>
         <y>10</y>
         <width>721</width>
-        <height>491</height>
+        <height>500</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_10" columnstretch="1,8,2,2,2">
@@ -605,63 +605,6 @@ padding-left: 3px;</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="2">
-        <widget class="QLabel" name="label_300">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="label_301">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="QLabel" name="label_302">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="3">
         <widget class="QLabel" name="label_303">
          <property name="font">
@@ -675,25 +618,6 @@ border-radius: 6px</string>
          </property>
          <property name="text">
           <string>중</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <widget class="QLabel" name="label_304">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -777,25 +701,6 @@ padding-left: 3px;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="2">
-        <widget class="QLabel" name="label_306">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -1333,25 +1238,6 @@ border-radius: 6px</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_319">
-         <property name="font">
-          <font>
-           <family>AppleSDGothicNeoM00</family>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border: 1px solid rgb(223, 223, 223);
-border-radius: 6px</string>
-         </property>
-         <property name="text">
-          <string>양호</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="1">
         <widget class="QLabel" name="label_320">
          <property name="font">
@@ -1389,6 +1275,90 @@ border-radius: 6px</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_36">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>done.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_37">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>done.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLabel" name="label_38">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>done.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLabel" name="label_39">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>done.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLabel" name="label_40">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>danger.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="label_41">
+         <property name="styleSheet">
+          <string notr="true">border: 1px solid rgb(223, 223, 223);
+border-radius: 6px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>danger.png</pixmap>
          </property>
         </widget>
        </item>
