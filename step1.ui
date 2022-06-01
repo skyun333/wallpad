@@ -917,6 +917,26 @@ border: 1px solid rgb(56,67,162)</string>
      <string>?</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>361</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border: 1px solid rgb(56,67,162)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>RS485_explain.png</pixmap>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
@@ -943,6 +963,7 @@ border: 1px solid rgb(56,67,162)</string>
    <zorder>toolButton_2</zorder>
    <zorder>toolButton_3</zorder>
    <zorder>toolButton_4</zorder>
+   <zorder>label_17</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

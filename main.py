@@ -30,7 +30,9 @@ class Step1Window(QMainWindow):
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
         global UART_flag
-        UART_flag=0
+        global RS_flag
+        UART_flag=0 
+        RS_flag=0
 
         # 사용자가 버튼 누르면 선택됐다고 시각적으로 보여지는 부분
         self.pushButton_8.clicked.connect(self.button8)
@@ -41,8 +43,10 @@ class Step1Window(QMainWindow):
         self.pushButton.clicked.connect(self.button)
         self.pushButton_3.clicked.connect(self.home)
         self.label_16.setHidden(True)
+        self.label_17.setHidden(True)
         
         self.toolButton.clicked.connect(self.tool)
+        self.toolButton_2.clicked.connect(self.tool2)
 
     def tool(self):
         global UART_flag
@@ -54,6 +58,17 @@ class Step1Window(QMainWindow):
             self.label_16.setHidden(True)
             UART_flag=0
         print(UART_flag)
+
+    def tool2(self):
+        global RS_flag
+
+        if RS_flag==0:
+            self.label_17.setHidden(False)
+            RS_flag=1
+        elif RS_flag==1:
+            self.label_17.setHidden(True)
+            RS_flag=0
+        print(RS_flag)
 
     def home(self):
         self.close()
