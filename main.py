@@ -20,6 +20,7 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 
 class Step1Window(QMainWindow):
+    
 
     def __init__(self):
         super().__init__()
@@ -28,6 +29,8 @@ class Step1Window(QMainWindow):
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
+        global UART_flag
+        UART_flag=0
 
         # 사용자가 버튼 누르면 선택됐다고 시각적으로 보여지는 부분
         self.pushButton_8.clicked.connect(self.button8)
@@ -37,6 +40,20 @@ class Step1Window(QMainWindow):
 
         self.pushButton.clicked.connect(self.button)
         self.pushButton_3.clicked.connect(self.home)
+        self.label_16.setHidden(True)
+        
+        self.toolButton.clicked.connect(self.tool)
+
+    def tool(self):
+        global UART_flag
+
+        if UART_flag==0:
+            self.label_16.setHidden(False)
+            UART_flag=1
+        elif UART_flag==1:
+            self.label_16.setHidden(True)
+            UART_flag=0
+        print(UART_flag)
 
     def home(self):
         self.close()

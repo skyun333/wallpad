@@ -579,9 +579,14 @@ border-color: rgb(0, 0, 0);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255,255,255);
-border: 2px solid rgb(255,255,255)</string>
+     <string notr="true">QPushButton {
+          	background-color : rgb(108, 147, 246);
+			color : rgb(255,255,255);
+			border: 2px solid rgb(255,255,255)
+        }
+QPushButton:hover {
+            self.label_16.setHidden(False)
+        }</string>
     </property>
     <property name="text">
      <string>UART</string>
@@ -840,6 +845,78 @@ border: 2px solid rgb(255,255,255)</string>
      <string>다음(N) &gt;</string>
     </property>
    </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>200</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>361</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border: 1px solid rgb(56,67,162)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>UART_explain.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>200</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>410</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_4">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>410</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
@@ -861,6 +938,11 @@ border: 2px solid rgb(255,255,255)</string>
    <zorder>pushButton_11</zorder>
    <zorder>label_14</zorder>
    <zorder>pushButton</zorder>
+   <zorder>toolButton</zorder>
+   <zorder>label_16</zorder>
+   <zorder>toolButton_2</zorder>
+   <zorder>toolButton_3</zorder>
+   <zorder>toolButton_4</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
