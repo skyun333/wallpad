@@ -215,7 +215,7 @@ class Step4Window(QMainWindow):
             count += 1
             QtTest.QTest.qWait(25)
 
-        if count == 100:
+        if count == 100:  # 점검 완료 시
             count = 0
             self.movie = QMovie("done.gif")
             self.movie.setScaledSize(QSize(100, 75))
@@ -248,6 +248,7 @@ class Step4Window(QMainWindow):
             self.label_74.setMovie(self.movie)
 
             for num in range(12, 33):
+                #QtTest.QTest.qWait(random.randrange(1, 500))
 
                 try:
                     label = getattr(self, 'label_{}'.format(num))
