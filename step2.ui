@@ -238,42 +238,6 @@ border-color: rgb(0, 0, 0);</string>
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>190</y>
-      <width>400</width>
-      <height>400</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>2</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::AutoText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>uart_connection.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
@@ -425,6 +389,387 @@ border-color: rgb(0, 0, 0);</string>
      </item>
     </layout>
    </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>210</y>
+      <width>741</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16600000</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+    <property name="toolTipDuration">
+     <number>4</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255);
+border: solid 0px;</string>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-105</y>
+       <width>829</width>
+       <height>1500</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>519</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>15777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255,255,255);
+border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : rgb(108, 147, 246);
+border: 2px solid rgb(108, 147, 246);
+border-radius:10px</string>
+      </property>
+      <property name="text">
+       <string>포트 연결 위치 확인</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>731</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(40,40,40)</string>
+      </property>
+      <property name="text">
+       <string>점검 진행을 위해 기기와의 연결이 필요합니다.
+기기와의 실시간 통신이 가능한 UART 포트와 연결을 해주세요
+
+기기에서 UART  핀 위치 확인을 우선 실시합니다.
+다음과 같이 4핀 배열의 단자를 찾아주세요.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>220</y>
+        <width>521</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : rgb(108, 147, 246);
+border: 2px solid rgb(108, 147, 246);
+border-radius:10px</string>
+      </property>
+      <property name="text">
+       <string>[사진]</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>460</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : rgb(108, 147, 246);
+border: 2px solid rgb(108, 147, 246);
+border-radius:10px</string>
+      </property>
+      <property name="text">
+       <string>연결 방법 안내</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>450</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255,255,255);
+border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>530</y>
+        <width>731</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(40,40,40)</string>
+      </property>
+      <property name="text">
+       <string>다음 그림과 같이 UART 단자를 연결해 주세요</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>600</y>
+        <width>400</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>2</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>uart_connection.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>1020</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255,255,255);
+border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>1030</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : rgb(108, 147, 246);
+border: 2px solid rgb(108, 147, 246);
+border-radius:10px</string>
+      </property>
+      <property name="text">
+       <string>핀 식별하기</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>label_21</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_16</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_18</zorder>
+     <zorder>label_19</zorder>
+     <zorder>label_20</zorder>
+    </widget>
+   </widget>
    <zorder>label_6</zorder>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
@@ -432,10 +777,10 @@ border-color: rgb(0, 0, 0);</string>
    <zorder>pushButton_3</zorder>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
-   <zorder>label_11</zorder>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>verticalLayoutWidget</zorder>
+   <zorder>scrollArea</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
