@@ -420,7 +420,7 @@ border-color: rgb(0, 0, 0);</string>
      <number>4</number>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(255, 255, 255);
+     <string notr="true">background-color:rgb(244, 244, 244);
 border: solid 0px;</string>
     </property>
     <property name="lineWidth">
@@ -442,9 +442,9 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-105</y>
+       <y>0</y>
        <width>829</width>
-       <height>1500</height>
+       <height>2500</height>
       </rect>
      </property>
      <property name="minimumSize">
@@ -468,7 +468,7 @@ border: solid 0px;</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>0</y>
+        <y>30</y>
         <width>61</width>
         <height>61</height>
        </rect>
@@ -497,7 +497,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>10</y>
+        <y>40</y>
         <width>421</width>
         <height>41</height>
        </rect>
@@ -516,7 +516,7 @@ border: 2px solid rgb(108, 147, 246);
 border-radius:10px</string>
       </property>
       <property name="text">
-       <string>포트 연결 위치 확인</string>
+       <string>포트 연결 준비</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -526,7 +526,7 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>70</y>
+        <y>100</y>
         <width>731</width>
         <height>131</height>
        </rect>
@@ -548,38 +548,17 @@ border-radius:10px</string>
 기기와의 실시간 통신이 가능한 UART 포트와 연결을 해주세요
 
 기기에서 UART  핀 위치 확인을 우선 실시합니다.
-다음과 같이 4핀 배열의 단자를 찾아주세요.</string>
+다음과 같이 통신이 가능한 TTL to USB 컨버터를 준비해 주세요</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_14">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>220</y>
-        <width>521</width>
-        <height>191</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color : rgb(108, 147, 246);
-border: 2px solid rgb(108, 147, 246);
-border-radius:10px</string>
-      </property>
-      <property name="text">
-       <string>[사진]</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLabel" name="label_16">
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>460</y>
+        <y>1090</y>
         <width>421</width>
         <height>41</height>
        </rect>
@@ -608,7 +587,7 @@ border-radius:10px</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>450</y>
+        <y>1080</y>
         <width>61</width>
         <height>61</height>
        </rect>
@@ -637,7 +616,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>530</y>
+        <y>1160</y>
         <width>731</width>
         <height>41</height>
        </rect>
@@ -655,7 +634,8 @@ border-radius:20px</string>
        <string notr="true">color:rgb(40,40,40)</string>
       </property>
       <property name="text">
-       <string>다음 그림과 같이 UART 단자를 연결해 주세요</string>
+       <string>다음 그림과 같이 UART 단자를 연결해 주세요
+핀 식별이 어려울 경우, [+] 단계의 [핀 식별] 안내를 참고해 주세요</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -665,7 +645,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>170</x>
-        <y>600</y>
+        <y>1230</y>
         <width>400</width>
         <height>400</height>
        </rect>
@@ -703,8 +683,8 @@ border-radius:20px</string>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>1020</y>
+        <x>40</x>
+        <y>1680</y>
         <width>61</width>
         <height>61</height>
        </rect>
@@ -732,8 +712,8 @@ border-radius:20px</string>
      <widget class="QLabel" name="label_21">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>1030</y>
+        <x>60</x>
+        <y>1690</y>
         <width>421</width>
         <height>41</height>
        </rect>
@@ -758,16 +738,185 @@ border-radius:10px</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>250</y>
+        <width>321</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>2</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px;
+border:solid 10px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>ttl_to_usb.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>600</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color : rgb(108, 147, 246);
+border: 2px solid rgb(108, 147, 246);
+border-radius:10px</string>
+      </property>
+      <property name="text">
+       <string>포트 연결 위치 확인</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>590</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : rgb(108, 147, 246);
+color : rgb(255,255,255);
+border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>660</y>
+        <width>731</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>AppleSDGothicNeoM00</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(40,40,40)</string>
+      </property>
+      <property name="text">
+       <string>다음과 같이 기기에서 4핀 배열의 단자를 찾아주세요</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>730</y>
+        <width>391</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>2</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>uart_wallpad.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <zorder>label_21</zorder>
      <zorder>label_13</zorder>
      <zorder>label_12</zorder>
      <zorder>label_11</zorder>
-     <zorder>label_14</zorder>
      <zorder>label_16</zorder>
      <zorder>label_17</zorder>
      <zorder>label_18</zorder>
      <zorder>label_19</zorder>
      <zorder>label_20</zorder>
+     <zorder>label_22</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_23</zorder>
+     <zorder>label_24</zorder>
+     <zorder>label_25</zorder>
     </widget>
    </widget>
    <zorder>label_6</zorder>
