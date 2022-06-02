@@ -563,6 +563,19 @@ border-color: rgb(0, 0, 0);</string>
      <string>점검 종료</string>
     </property>
    </widget>
+   <widget class="QCommandLinkButton" name="commandLinkButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>550</y>
+      <width>191</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>점검 기준표 확인</string>
+    </property>
+   </widget>
    <zorder>label_6</zorder>
    <zorder>label_11</zorder>
    <zorder>label_5</zorder>
@@ -586,6 +599,7 @@ border-color: rgb(0, 0, 0);</string>
    <zorder>pushButton_4</zorder>
    <zorder>pushButton_5</zorder>
    <zorder>pushButton_6</zorder>
+   <zorder>commandLinkButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

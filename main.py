@@ -14,6 +14,7 @@ import socket
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDateTime
 import random
+import webbrowser
 
 myappid = 'slow_heart.png'  # arbitrary string
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
@@ -474,6 +475,7 @@ class ProresultWindow(QMainWindow):
         self.pushButton_4.clicked.connect(self.button4)
         self.pushButton_5.clicked.connect(self.button5)
         self.pushButton_6.clicked.connect(self.button6)
+        self.commandLinkButton.clicked.connect(lambda: webbrowser.open('https://url.kr/z3omh7'))
 
     def home(self):
         self.close()
