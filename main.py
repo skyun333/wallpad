@@ -20,7 +20,6 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
 
 class Step1Window(QMainWindow):
-    
 
     def __init__(self):
         super().__init__()
@@ -31,8 +30,8 @@ class Step1Window(QMainWindow):
         self.show()
         global UART_flag
         global RS_flag
-        UART_flag=0 
-        RS_flag=0
+        UART_flag = 0
+        RS_flag = 0
 
         # 사용자가 버튼 누르면 선택됐다고 시각적으로 보여지는 부분
         self.pushButton_8.clicked.connect(self.button8)
@@ -44,30 +43,30 @@ class Step1Window(QMainWindow):
         self.pushButton_3.clicked.connect(self.home)
         self.label_16.setHidden(True)
         self.label_17.setHidden(True)
-        
+
         self.toolButton.clicked.connect(self.tool)
         self.toolButton_2.clicked.connect(self.tool2)
 
     def tool(self):
         global UART_flag
 
-        if UART_flag==0:
+        if UART_flag == 0:
             self.label_16.setHidden(False)
-            UART_flag=1
-        elif UART_flag==1:
+            UART_flag = 1
+        elif UART_flag == 1:
             self.label_16.setHidden(True)
-            UART_flag=0
+            UART_flag = 0
         print(UART_flag)
 
     def tool2(self):
         global RS_flag
 
-        if RS_flag==0:
+        if RS_flag == 0:
             self.label_17.setHidden(False)
-            RS_flag=1
-        elif RS_flag==1:
+            RS_flag = 1
+        elif RS_flag == 1:
             self.label_17.setHidden(True)
-            RS_flag=0
+            RS_flag = 0
         print(RS_flag)
 
     def home(self):
@@ -179,15 +178,127 @@ class Step3Window(QMainWindow):
 class Step4Window(QMainWindow):
     def __init__(self):
         super().__init__()
+        count = 0
 
         self.ui = uic.loadUi('step4.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월패드 보안 점검 툴')
         self.show()
 
-        ip = socket.gethostbyname(socket.gethostname())
+        self.movie = QMovie("spinner2.gif")
+        self.movie.setScaledSize(QSize(115, 115))
+        self.movie.start()
+        self.label_41.setMovie(self.movie)
+        self.label_42.setMovie(self.movie)
+        self.label_43.setMovie(self.movie)
+        self.label_44.setMovie(self.movie)
+        self.label_45.setMovie(self.movie)
+        self.label_46.setMovie(self.movie)
+        self.label_47.setMovie(self.movie)
+        self.label_48.setMovie(self.movie)
+        self.label_49.setMovie(self.movie)
+        self.label_50.setMovie(self.movie)
+        self.label_51.setMovie(self.movie)
+        self.label_52.setMovie(self.movie)
+        self.label_53.setMovie(self.movie)
+        self.label_54.setMovie(self.movie)
 
-        self.label_11.setText("현재 장치의 ip주소\n\n" + ip)
+        self.label_68.setMovie(self.movie)
+        self.label_69.setMovie(self.movie)
+        self.label_70.setMovie(self.movie)
+
+        self.label_73.setMovie(self.movie)
+        self.label_74.setMovie(self.movie)
+        self.label_75.setMovie(self.movie)
+
+        while count < 100:
+            count += 1
+            QtTest.QTest.qWait(25)
+
+        if count == 100:
+            count = 0
+            self.movie = QMovie("done.gif")
+            self.movie.setScaledSize(QSize(100, 75))
+            self.label_44.setMovie(self.movie)
+            self.label_68.setMovie(self.movie)
+            self.label_75.setMovie(self.movie)
+            self.movie.start()
+
+            self.movie = QMovie("no.gif")
+            self.movie.setScaledSize(QSize(30, 30))
+
+            self.label_54.setMovie(self.movie)
+            self.label_53.setMovie(self.movie)
+            self.label_52.setMovie(self.movie)
+            self.label_51.setMovie(self.movie)
+            self.label_50.setMovie(self.movie)
+            self.label_49.setMovie(self.movie)
+            self.label_48.setMovie(self.movie)
+            self.label_47.setMovie(self.movie)
+            self.label_46.setMovie(self.movie)
+            self.label_45.setMovie(self.movie)
+            self.label_43.setMovie(self.movie)
+            self.label_42.setMovie(self.movie)
+            self.label_41.setMovie(self.movie)
+
+            self.label_70.setMovie(self.movie)
+            self.label_69.setMovie(self.movie)
+
+            self.label_73.setMovie(self.movie)
+            self.label_74.setMovie(self.movie)
+
+            for num in range(12, 33):
+
+                try:
+                    label = getattr(self, 'label_{}'.format(num))
+                    label.setStyleSheet("border: 1px solid rgb(223, 223, 223);"
+                                        "border-radius: 6px;"
+                                        "padding-left: 3px;"
+                                        "background-color: rgb(223,223,223);"
+                                        "color:rgb(161, 161, 161);"
+
+                                        )
+                except:
+                    pass
+
+            self.label_19.setStyleSheet(
+                "border: 1px solid rgb(223, 223, 223);"
+                "border-radius: 6px;"
+                "padding-left: 3px;"
+                "background-color:rgb(120, 179, 72);"
+                "color:rgb(255,255,255);"
+            )
+
+            self.label_26.setStyleSheet(
+                "border: 1px solid rgb(223, 223, 223);"
+                "border-radius: 6px;"
+                "padding-left: 3px;"
+                "background-color:rgb(120, 179, 72);"
+                "color:rgb(255,255,255);"
+            )
+
+            self.label_80.setStyleSheet(
+                "border: 1px solid rgb(223, 223, 223);"
+                "border-radius: 6px;"
+                "padding-left: 3px;"
+                "background-color:rgb(120, 179, 72);"
+                "color:rgb(255,255,255);"
+            )
+
+            self.movie.start()
+
+            while count < 100:
+                count += 1
+                QtTest.QTest.qWait(17)
+
+            self.movie = QMovie("done_png.png")
+            self.movie.setScaledSize(QSize(100, 75))
+
+            self.label_44.setMovie(self.movie)
+            self.label_68.setMovie(self.movie)
+            self.label_75.setMovie(self.movie)
+
+            self.movie.start()
 
         self.pushButton.clicked.connect(self.button)
         self.pushButton_3.clicked.connect(self.home)
