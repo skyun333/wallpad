@@ -275,17 +275,7 @@ border-color: rgb(0, 0, 0);</string>
     </property>
     <item>
      <property name="text">
-      <string>COM3</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
       <string>COM4</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>COM5</string>
      </property>
     </item>
    </widget>

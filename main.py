@@ -162,6 +162,13 @@ class Step3Window(QMainWindow):
         self.pushButton_3.clicked.connect(self.home)
         self.pushButton_2.clicked.connect(self.button2)
 
+        self.addItem()
+
+    def addItem(self):
+        
+        QtTest.QTest.qWait(5000)
+        self.listWidget.addItem('COM5')
+
     def button2(self):
         self.close()
         Step2Window()
