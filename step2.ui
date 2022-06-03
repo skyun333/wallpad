@@ -379,8 +379,7 @@ border-color: rgb(0, 0, 0);</string>
         <string notr="true">color:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
-        <string>기기정보 및
-패스워드</string>
+        <string>패스워드 &gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -442,7 +441,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-1891</y>
+       <y>0</y>
        <width>829</width>
        <height>2850</height>
       </rect>

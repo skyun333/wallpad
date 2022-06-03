@@ -204,7 +204,7 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(108,147,246)</string>
     </property>
     <property name="text">
-     <string>기기정보 및 패스워드</string>
+     <string>패스워드</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -232,7 +232,7 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(40,40,40)</string>
     </property>
     <property name="text">
-     <string>고유식별번호(MAC) 및 관리자 패스워드를 입력해주세요
+     <string>관리자 패스워드를 입력해주세요
 보안 항목 점검 시 활용됩니다.</string>
     </property>
     <property name="alignment">
@@ -380,8 +380,7 @@ border-color: rgb(0, 0, 0);</string>
         <string notr="true">color:rgb(108, 147, 246)</string>
        </property>
        <property name="text">
-        <string>기기정보 및
-패스워드 &gt;</string>
+        <string>패스워드 &gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -390,68 +389,11 @@ border-color: rgb(0, 0, 0);</string>
      </item>
     </layout>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>310</y>
-      <width>481</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_8">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>250</y>
-      <width>221</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>AppleSDGothicNeoM00</family>
-      <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color : rgb(108, 147, 246);
-color : rgb(255,255,255);
-border: 2px solid rgb(255,255,255);
-border-radius:20px</string>
-    </property>
-    <property name="text">
-     <string>고유식별번호(MAC)</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-    <property name="default">
-     <bool>false</bool>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_9">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>420</y>
+      <x>210</x>
+      <y>240</y>
       <width>221</width>
       <height>41</height>
      </rect>
@@ -492,8 +434,8 @@ border-radius:20px</string>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>480</y>
+      <x>210</x>
+      <y>300</y>
       <width>481</width>
       <height>51</height>
      </rect>
@@ -514,8 +456,6 @@ border-radius:20px</string>
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>verticalLayoutWidget</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>pushButton_8</zorder>
    <zorder>pushButton_9</zorder>
    <zorder>lineEdit_2</zorder>
   </widget>

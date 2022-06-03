@@ -262,8 +262,7 @@ border: 2px solid rgb(255,255,255)</string>
         <string notr="true">color:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
-        <string>기기정보 및
-패스워드</string>
+        <string>패스워드 &gt;</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
