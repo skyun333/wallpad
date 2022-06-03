@@ -348,8 +348,7 @@ class Step5Window(QMainWindow):
         FirstWindow()
 
     def button(self):
-        global mac
-        mac = str(self.lineEdit.text())
+    
 
         global admin_pw
         admin_pw = str(self.lineEdit_2.text())
