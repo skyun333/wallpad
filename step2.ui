@@ -442,9 +442,9 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-2189</y>
+       <y>-1891</y>
        <width>829</width>
-       <height>2600</height>
+       <height>2850</height>
       </rect>
      </property>
      <property name="minimumSize">
@@ -988,25 +988,6 @@ border-radius:20px</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="label_29">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>1890</y>
-        <width>331</width>
-        <height>231</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(255,255,255)</string>
-      </property>
-      <property name="text">
-       <string>[멀티테스터 사진]</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_30">
       <property name="geometry">
        <rect>
@@ -1039,7 +1020,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>2160</y>
+        <y>2270</y>
         <width>221</width>
         <height>41</height>
        </rect>
@@ -1067,7 +1048,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>2220</y>
+        <y>2330</y>
         <width>731</width>
         <height>41</height>
        </rect>
@@ -1096,7 +1077,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>2270</y>
+        <y>2390</y>
         <width>731</width>
         <height>41</height>
        </rect>
@@ -1126,7 +1107,7 @@ border-radius:20px</string>
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>2320</y>
+        <y>2440</y>
         <width>601</width>
         <height>251</height>
        </rect>
@@ -1315,6 +1296,45 @@ background-color: rgb(255,255,255)</string>
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>1900</y>
+        <width>311</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>2</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>mode_ex.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <zorder>label_21</zorder>
      <zorder>label_13</zorder>
      <zorder>label_12</zorder>
@@ -1331,12 +1351,12 @@ background-color: rgb(255,255,255)</string>
      <zorder>label_25</zorder>
      <zorder>label_27</zorder>
      <zorder>label_28</zorder>
-     <zorder>label_29</zorder>
      <zorder>label_30</zorder>
      <zorder>label_31</zorder>
      <zorder>label_32</zorder>
      <zorder>label_33</zorder>
      <zorder>gridLayoutWidget</zorder>
+     <zorder>label_29</zorder>
     </widget>
    </widget>
    <zorder>label_6</zorder>
