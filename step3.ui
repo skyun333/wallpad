@@ -394,7 +394,7 @@ border-color: rgb(0, 0, 0);</string>
         <string notr="true">color:rgb(255, 255, 255)</string>
        </property>
        <property name="text">
-        <string>패스워드 &gt;</string>
+        <string>패스워드</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
