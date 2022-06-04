@@ -572,6 +572,11 @@ border-color: rgb(0, 0, 0);</string>
       <height>48</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>AppleSDGothicNeoM00</family>
+     </font>
+    </property>
     <property name="text">
      <string>점검 기준표 확인</string>
     </property>
