@@ -166,7 +166,7 @@ class Step3Window(QMainWindow):
         self.addItem()
 
     def addItem(self):
-        
+
         QtTest.QTest.qWait(5000)
         self.listWidget.addItem('COM5')
 
@@ -348,7 +348,6 @@ class Step5Window(QMainWindow):
         FirstWindow()
 
     def button(self):
-    
 
         global admin_pw
         admin_pw = str(self.lineEdit_2.text())
@@ -474,7 +473,8 @@ class ProresultWindow(QMainWindow):
         self.pushButton_4.clicked.connect(self.button4)
         self.pushButton_5.clicked.connect(self.button5)
         self.pushButton_6.clicked.connect(self.button6)
-        self.commandLinkButton.clicked.connect(lambda: webbrowser.open('https://url.kr/z3omh7'))
+        self.commandLinkButton.clicked.connect(
+            lambda: webbrowser.open('https://url.kr/z3omh7'))
 
     def home(self):
         self.close()
@@ -535,6 +535,7 @@ class ResultWindow_wallpad(QMainWindow):
         self.pushButton_63.clicked.connect(self.button63)  # 20
         self.pushButton_64.clicked.connect(self.button64)  # 21
         self.pushButton_73.clicked.connect(self.button73)  # 22
+        self.pushButton_74.clicked.connect(self.button74)  # 22
 
     def button55(self):
         feedback_wallpad_5()
@@ -589,6 +590,9 @@ class ResultWindow_wallpad(QMainWindow):
 
     def button73(self):
         feedback_wallpad_22()
+
+    def button74(self):
+        feedback_wallpad_23()
 
     def button54(self):
         feedback_wallpad_3()
@@ -1089,6 +1093,7 @@ class ResultWindow_wallpad_after(QMainWindow):
         self.pushButton_63.clicked.connect(self.button63)  # 20
         self.pushButton_64.clicked.connect(self.button64)  # 21
         self.pushButton_73.clicked.connect(self.button73)  # 22
+        self.pushButton_74.clicked.connect(self.button74)  # 22
 
     def button55(self):
         feedback_wallpad_5()
@@ -1143,6 +1148,9 @@ class ResultWindow_wallpad_after(QMainWindow):
 
     def button73(self):
         feedback_wallpad_22()
+
+    def button74(self):
+        feedback_wallpad_23()
 
     def button54(self):
         feedback_wallpad_3()
@@ -1528,6 +1536,23 @@ class feedback_wallpad_22(QDialog):
         super().__init__()
 
         self.ui = uic.loadUi('feedback/feedback_wallpad_22.ui', self)
+        self.setWindowIcon(QIcon('slow_heart.png'))
+        self.setWindowTitle('조치 방법')
+
+        self.show()
+
+        self.pushButton_4.clicked.connect(self.button4)
+
+    def button4(self):
+        self.close()
+
+
+class feedback_wallpad_23(QDialog):
+
+    def __init__(self):
+        super().__init__()
+
+        self.ui = uic.loadUi('feedback/feedback_wallpad_23.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('조치 방법')
 
