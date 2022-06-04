@@ -616,7 +616,7 @@ padding-left: 3px;</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>상</string>
+          <string>중</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -714,7 +714,7 @@ padding-left: 3px;</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>중</string>
+          <string>하</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -909,7 +909,7 @@ border-radius: 6px</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>상</string>
+          <string>중</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -1169,7 +1169,7 @@ border-radius: 6px</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>상</string>
+          <string>중</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -1247,7 +1247,7 @@ border-radius: 6px</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>중</string>
+          <string>상</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>

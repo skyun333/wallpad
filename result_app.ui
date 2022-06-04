@@ -518,7 +518,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-178</y>
+       <y>0</y>
        <width>829</width>
        <height>519</height>
       </rect>
@@ -577,7 +577,7 @@ border: solid 0px;</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>상</string>
+          <string>중</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -617,7 +617,7 @@ padding-left: 3px;</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>중</string>
+          <string>상</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -716,7 +716,7 @@ padding-left: 3px;</string>
 border-radius: 6px</string>
          </property>
          <property name="text">
-          <string>중</string>
+          <string>상</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
