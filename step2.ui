@@ -216,7 +216,7 @@ border-color: rgb(0, 0, 0);</string>
       <x>210</x>
       <y>150</y>
       <width>731</width>
-      <height>31</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -232,7 +232,8 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(40,40,40)</string>
     </property>
     <property name="text">
-     <string>다음 안내 사항에 따라 단자를 연결해 주세요. 연결이 완료되면 [다음] 버튼을 누르세요</string>
+     <string>다음 안내 사항에 따라 단자를 연결해 주세요 
+연결을 위한 안내 확인 후 [다음] 버튼을 누르세요</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -392,9 +393,9 @@ border-color: rgb(0, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>190</y>
+      <y>220</y>
       <width>741</width>
-      <height>411</height>
+      <height>381</height>
      </rect>
     </property>
     <property name="sizePolicy">
