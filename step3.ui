@@ -232,7 +232,7 @@ border-color: rgb(0, 0, 0);</string>
      <string notr="true">color:rgb(40,40,40)</string>
     </property>
     <property name="text">
-     <string>월패드가 연결된 포트를 선택해주세요.</string>
+     <string>월패드 단자 연결 후 연결된 포트를 선택해주세요</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

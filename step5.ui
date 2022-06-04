@@ -233,7 +233,7 @@ border-color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>관리자 패스워드를 입력해주세요
-보안 항목 점검 시 활용됩니다.</string>
+보안 항목 점검 시 활용됩니다</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
