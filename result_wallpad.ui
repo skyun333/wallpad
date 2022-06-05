@@ -518,7 +518,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-1606</y>
+       <y>-1639</y>
        <width>829</width>
        <height>1980</height>
       </rect>
@@ -3033,7 +3033,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3085,7 +3085,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3099,7 +3099,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3113,7 +3113,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3127,7 +3127,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3160,7 +3160,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3174,7 +3174,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3188,7 +3188,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3202,7 +3202,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3216,7 +3216,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3230,7 +3230,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3244,7 +3244,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3258,7 +3258,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3272,7 +3272,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3286,7 +3286,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3300,7 +3300,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3373,7 +3373,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3406,7 +3406,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3420,7 +3420,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3434,7 +3434,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3448,7 +3448,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3462,7 +3462,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -3515,7 +3515,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>

@@ -1288,7 +1288,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1302,7 +1302,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>danger_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1316,7 +1316,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1330,7 +1330,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1344,7 +1344,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1358,7 +1358,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>

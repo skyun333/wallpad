@@ -15,6 +15,7 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QDateTime
 import random
 import webbrowser
+from PyQt5.QtGui import QPixmap
 
 from check_admin_password import check_admin_pw_security
 
@@ -431,16 +432,27 @@ class ProgressWindow(QMainWindow):
 
         global check_admin_password
         check_admin_password = self.check_admin_password.return_res()
+        print("check_admin_password : ", check_admin_password)
+
         global check_cryptoalgorithm
         check_cryptoalgorithm = self.check_cryptoalgorithm.return_res()
+        print("check_cryptoalgorithm : ", check_cryptoalgorithm)
+
         global check_kernel_version
         check_kernel_version = self.check_kernel_version.return_res()
+        print("check_kernel_version : ", check_kernel_version)
+
         global check_mac
         check_mac = self.check_mac.return_res()
+        print("check_mac : ", check_mac)
+
         global check_Obfuscation
         check_Obfuscation = self.check_Obfuscation.return_res()
+        print("check_Obfuscation : ", check_Obfuscation)
+
         global check_password
         check_password = self.check_password.return_res()
+        print("check_password : ", check_password)
 
         # print("check_admin_password : ",
         #       self.check_admin_password.return_res())
@@ -544,6 +556,31 @@ class ResultWindow_wallpad(QMainWindow):
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월담금지')
         self.show()
+
+        if(check_password == 0):
+            self.label_17.setPixmap(QPixmap('danger.png'))
+        elif(check_password == 1):
+            self.label_17.setPixmap(QPixmap('done.png'))
+
+        if(check_admin_password == 0):
+            self.label_18.setPixmap(QPixmap('danger.png'))
+        elif(check_admin_password == 1):
+            self.label_18.setPixmap(QPixmap('done.png'))
+
+        if(check_mac == 0):
+            self.label_20.setPixmap(QPixmap('danger.png'))
+        elif(check_mac == 1):
+            self.label_20.setPixmap(QPixmap('done.png'))
+
+        if(check_kernel_version == 0):
+            self.label_34.setPixmap(QPixmap('danger.png'))
+        elif(check_kernel_version == 1):
+            self.label_34.setPixmap(QPixmap('done.png'))
+
+        if(check_Obfuscation == 0):
+            self.label_37.setPixmap(QPixmap('danger.png'))
+        elif(check_Obfuscation == 1):
+            self.label_37.setPixmap(QPixmap('done.png'))
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
@@ -658,6 +695,11 @@ class ResultWindow_app(QMainWindow):
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월담금지')
         self.show()
+
+        if(check_cryptoalgorithm == 0):
+            self.label_38.setPixmap(QPixmap('done.png'))
+        elif(check_Obfuscation == 1):
+            self.label_38.setPixmap(QPixmap('danger.png'))
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
@@ -1102,6 +1144,31 @@ class ResultWindow_wallpad_after(QMainWindow):
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월담금지')
         self.show()
+
+        if(check_password == 0):
+            self.label_17.setPixmap(QPixmap('done.png'))
+        elif(check_password == 1):
+            self.label_17.setPixmap(QPixmap('danger.png'))
+
+        if(check_admin_password == 0):
+            self.label_18.setPixmap(QPixmap('done.png'))
+        elif(check_admin_password == 1):
+            self.label_18.setPixmap(QPixmap('danger.png'))
+
+        if(check_mac == 0):
+            self.label_20.setPixmap(QPixmap('done.png'))
+        elif(check_mac == 1):
+            self.label_20.setPixmap(QPixmap('danger.png'))
+
+        if(check_kernel_version == 0):
+            self.label_34.setPixmap(QPixmap('done.png'))
+        elif(check_kernel_version == 1):
+            self.label_34.setPixmap(QPixmap('danger.png'))
+
+        if(check_Obfuscation == 0):
+            self.label_37.setPixmap(QPixmap('done.png'))
+        elif(check_Obfuscation == 1):
+            self.label_37.setPixmap(QPixmap('danger.png'))
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)
@@ -1607,6 +1674,11 @@ class ResultWindow_app_after(QMainWindow):
         self.setWindowIcon(QIcon('slow_heart.png'))
         self.setWindowTitle('월담금지')
         self.show()
+
+        if(check_cryptoalgorithm == 0):
+            self.label_38.setPixmap(QPixmap('danger.png'))
+        elif(check_Obfuscation == 1):
+            self.label_38.setPixmap(QPixmap('done.png'))
 
         self.pushButton_2.clicked.connect(self.button2)
         self.pushButton_3.clicked.connect(self.home)

@@ -518,7 +518,7 @@ border: solid 0px;</string>
      <property name="geometry">
       <rect>
        <x>0</x>
-       <y>-142</y>
+       <y>-178</y>
        <width>829</width>
        <height>519</height>
       </rect>
@@ -1168,7 +1168,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1182,7 +1182,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1196,7 +1196,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1210,7 +1210,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>danger.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
@@ -1224,7 +1224,7 @@ border-radius: 6px;</string>
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>done.png</pixmap>
+          <pixmap>done_gray.png</pixmap>
          </property>
         </widget>
        </item>
