@@ -29,7 +29,7 @@ class Step1Window(QMainWindow):
 
         self.ui = uic.loadUi('step1.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
         global UART_flag
         global RS_flag
@@ -132,7 +132,7 @@ class Step2Window(QMainWindow):
 
         self.ui = uic.loadUi('step2.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton.clicked.connect(self.button)
@@ -158,7 +158,7 @@ class Step3Window(QMainWindow):
 
         self.ui = uic.loadUi('step3.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton.clicked.connect(self.button)
@@ -192,7 +192,7 @@ class Step4Window(QMainWindow):
 
         self.ui = uic.loadUi('step4.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.movie = QMovie("spinner2.gif")
@@ -334,7 +334,7 @@ class Step5Window(QMainWindow):
 
         self.ui = uic.loadUi('step5.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton.clicked.connect(self.button)
@@ -365,7 +365,7 @@ class ItemsWindow(QMainWindow):
 
         self.ui = uic.loadUi('items.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
         self.pushButton.clicked.connect(self.button)
         self.pushButton_3.clicked.connect(self.home)
@@ -397,7 +397,7 @@ class ProgressWindow(QMainWindow):
 
         self.ui = uic.loadUi('progress.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         count = 0
@@ -490,7 +490,7 @@ class ProresultWindow(QMainWindow):
             "selection-background-color: #00ff0000;"
         )
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.movie = QMovie("red.gif")
@@ -508,7 +508,7 @@ class ProresultWindow(QMainWindow):
         self.pushButton_5.clicked.connect(self.button5)
         self.pushButton_6.clicked.connect(self.button6)
         self.commandLinkButton.clicked.connect(
-            lambda: webbrowser.open('https://url.kr/z3omh7'))
+            lambda: webbrowser.open('https://url.kr/fjeh28'))
 
     def home(self):
         self.close()
@@ -542,7 +542,7 @@ class ResultWindow_wallpad(QMainWindow):
 
         self.ui = uic.loadUi('result_wallpad.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -656,7 +656,7 @@ class ResultWindow_app(QMainWindow):
 
         self.ui = uic.loadUi('result_app.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -804,7 +804,7 @@ class ResultWindow_server(QMainWindow):
 
         self.ui = uic.loadUi('result_server.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -973,7 +973,7 @@ class ResultWindow_internet(QMainWindow):
 
         self.ui = uic.loadUi('result_internet.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -1100,7 +1100,7 @@ class ResultWindow_wallpad_after(QMainWindow):
 
         self.ui = uic.loadUi('result_wallpad.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -1605,7 +1605,7 @@ class ResultWindow_app_after(QMainWindow):
 
         self.ui = uic.loadUi('result_app.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -1651,7 +1651,7 @@ class ResultWindow_server_after(QMainWindow):
 
         self.ui = uic.loadUi('result_server.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -1701,7 +1701,7 @@ class ResultWindow_internet_after(QMainWindow):
 
         self.ui = uic.loadUi('result_internet.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
 
         self.pushButton_2.clicked.connect(self.button2)
@@ -1750,7 +1750,7 @@ class FirstWindow(QMainWindow):
 
         self.ui = uic.loadUi('firstmain.ui', self)
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
         self.pushButton_3.clicked.connect(self.button3)
 
@@ -1786,7 +1786,7 @@ class MainWindow(QMainWindow):
             "selection-background-color: #00ff0000;"
         )
         self.setWindowIcon(QIcon('slow_heart.png'))
-        self.setWindowTitle('월패드 보안 점검 툴')
+        self.setWindowTitle('월담금지')
         self.show()
         datetime = QDateTime.currentDateTime()
         self.label_6.setText(datetime.toString('yyyy.MM.dd, hh:mm'))
