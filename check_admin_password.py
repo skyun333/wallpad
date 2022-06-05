@@ -26,7 +26,9 @@ def check_admin_pw_security(admin_pw, user_input):
         return 1  # safe
 
 
-user_input = "56266"  # 툴에서 입력받은 사용자 입력 값 (전역변수로 넘겨받는 변수)
-admin_pw = get_admin_pw()
-result = check_admin_pw_security(admin_pw, user_input)
-print("result(0->unsafe, 1->safe): ", result)
+def return_res():
+
+    user_input = "56266"  # 툴에서 입력받은 사용자 입력 값 (전역변수로 넘겨받는 변수)
+    admin_pw = get_admin_pw()
+    result = check_admin_pw_security(admin_pw, user_input)
+    return result

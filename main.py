@@ -16,6 +16,8 @@ from PyQt5.QtCore import QDateTime
 import random
 import webbrowser
 
+from check_admin_password import check_admin_pw_security
+
 myappid = 'slow_heart.png'  # arbitrary string
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
@@ -383,6 +385,13 @@ class ItemsWindow(QMainWindow):
 
 
 class ProgressWindow(QMainWindow):
+    import check_admin_password
+    import check_cryptoalgorithm
+    import check_kernel_version
+    import check_mac
+    import check_Obfuscation
+    import check_password
+
     def __init__(self):
         super().__init__()
 
@@ -405,6 +414,7 @@ class ProgressWindow(QMainWindow):
                 QtTest.QTest.qWait(400)
             if count == random.randrange(21, 60):
                 QtTest.QTest.qWait(600)
+
             if count == random.randrange(61, 99):
                 QtTest.QTest.qWait(200)
 
@@ -418,6 +428,30 @@ class ProgressWindow(QMainWindow):
             self.movie.start()
             self.label_10.setText("점검이 완료되었습니다\n결과를 확인하세요")
             self.pushButton.setText("결과 확인")
+
+        global check_admin_password
+        check_admin_password = self.check_admin_password.return_res()
+        global check_cryptoalgorithm
+        check_cryptoalgorithm = self.check_cryptoalgorithm.return_res()
+        global check_kernel_version
+        check_kernel_version = self.check_kernel_version.return_res()
+        global check_mac
+        check_mac = self.check_mac.return_res()
+        global check_Obfuscation
+        check_Obfuscation = self.check_Obfuscation.return_res()
+        global check_password
+        check_password = self.check_password.return_res()
+
+        # print("check_admin_password : ",
+        #       self.check_admin_password.return_res())
+        # print("check_cryptoalgorithm : ",
+        #       self.check_cryptoalgorithm.return_res())
+        # print("check_kernel_version : ",
+        #       self.check_kernel_version.return_res())
+        # print("check_mac : ", self.check_mac.return_res())
+        # print("check_Obfuscation : ", self.check_Obfuscation.return_res())
+        # print("check_password : ", self.check_password.return_res())
+
         self.pushButton.clicked.connect(self.button)
         self.pushButton_3.clicked.connect(self.home)
 
